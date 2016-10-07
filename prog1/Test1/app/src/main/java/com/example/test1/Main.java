@@ -6,6 +6,10 @@ package com.example.test1;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello!");
+        int a = 4;
+        if (a == 4)
+            System.out.println("It's true!");
+        else
+            System.out.println("It's false!");
     }
 }
