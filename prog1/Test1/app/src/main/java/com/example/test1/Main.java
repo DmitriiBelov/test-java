@@ -5,20 +5,19 @@ package com.example.test1;
  */
 
 public class Main {
-    public static void func() {
-        System.out.println("hello from func!");
-
-    }
-    public static double sum(double a, double b) {
-        return a + b;
-    }
-    public static int sum(int a, int b) {
-        return a + b;
-    }
     public static void main(String[] args) {
-        Point point = new Point();
-        point.x = 3;
-        point.y = 2;
-        point.PrintPoint();
+        Shape crcl = new Circle(5.0f);
+        Shape rctn = new Rectangle(5.0, 3.0);
+        Shape larger = getLargerShape(crcl, rctn);
+
+        System.out.println("The area: " + larger.area());
+    }
+
+    public static Shape getLargerShape(Shape s1, Shape s2)
+    {
+        if (s1.area() > s2.area())
+            return s1;
+        else
+            return s2;
     }
 }
