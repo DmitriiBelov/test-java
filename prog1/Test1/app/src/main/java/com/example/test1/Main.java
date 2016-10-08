@@ -5,19 +5,29 @@ package com.example.test1;
  */
 
 public class Main {
+    public static void func() {
+        System.out.println("hello from func!");
+
+    }
+    public static double sum(double a, double b) {
+        return a + b;
+    }
+    public static int sum(int a, int b) {
+        return a + b;
+    }
     public static void main(String[] args) {
-        for (int i1=0;i1<10;i1+=2) {
-            System.out.println(i1);
-        }
 
-        /*for (int i=0;i<3;i++)
-        {
-            System.out.println("Iter again...");
-        }
+        Advice advice = new Advice();
+        advice.message();
 
-        int[] arr = {1,0,3,4};
-        for (int iV:arr) {
-            System.out.println(iV);
-        }*/
+        /*double dV = sum(1.2f,1.3f);
+        System.out.println(dV);
+        int iV = sum(1,3);
+        System.out.println(iV);*/
+
+        /*Student s = new Student();
+        s.setName("Dima");
+        String name = s.getName();
+        System.out.println(name);*/
     }
 }
