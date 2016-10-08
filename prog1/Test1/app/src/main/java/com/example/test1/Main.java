@@ -16,18 +16,9 @@ public class Main {
         return a + b;
     }
     public static void main(String[] args) {
-
-        Advice advice = new Advice();
-        advice.message();
-
-        /*double dV = sum(1.2f,1.3f);
-        System.out.println(dV);
-        int iV = sum(1,3);
-        System.out.println(iV);*/
-
-        /*Student s = new Student();
-        s.setName("Dima");
-        String name = s.getName();
-        System.out.println(name);*/
+        Point point = new Point();
+        point.x = 3;
+        point.y = 2;
+        point.PrintPoint();
     }
 }
