@@ -6,17 +6,18 @@ package com.example.test1;
 
 public class Main {
     public static void main(String[] args) {
+        for (int i1=0;i1<10;i1+=2) {
+            System.out.println(i1);
+        }
 
-        boolean bRes = true;
-        String sA = new String("string");
-        String sB = new String("string");
-        String sA2 = sA;
+        /*for (int i=0;i<3;i++)
+        {
+            System.out.println("Iter again...");
+        }
 
-        bRes = sA == sB;
-
-        if (bRes)
-            System.out.println("It's true!");
-        else
-            System.out.println("It's false!");
+        int[] arr = {1,0,3,4};
+        for (int iV:arr) {
+            System.out.println(iV);
+        }*/
     }
 }
