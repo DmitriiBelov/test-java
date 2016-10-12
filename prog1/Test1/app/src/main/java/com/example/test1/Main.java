@@ -8,10 +8,10 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int iDlina = 3;
-        int iShirina = 4;
-        Triangle trl = new Triangle(iDlina, iShirina);
-        System.out.println("Area triangle: "+trl.area());
-
+        Cat cat = new Cat();
+        Pickup pickup = new Pickup();
+        cat.getSound();
+        pickup.transportCargo();
+        pickup.transportPassengers();
     }
 }
