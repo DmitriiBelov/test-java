@@ -8,36 +8,10 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int a = 4;
-        try {
-            System.out.println(a/0);
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            System.out.println(a);
-        }
+        int iDlina = 3;
+        int iShirina = 4;
+        Triangle trl = new Triangle(iDlina, iShirina);
+        System.out.println("Area triangle: "+trl.area());
 
-        // усложнённая обработка исключений
-        /*int[] m= {-1,0,1};
-        Scanner sc = new Scanner(System.in);
-        try {
-            int a = sc.nextInt();
-            m[a] = 4/a;
-            System.out.println(m[a]);
-        } catch (ArithmeticException e) {
-            System.out.println("Произошла недопустимая арифметическая операция");
-        } catch (ArrayIndexOutOfBoundsException e) {
-            System.out.println("Обращение по недопустимому индексу массива");
-        } catch (Exception e) {
-            System.out.println("Произошло ещё какое-то исключение");
-        }*/
-
-        // простая обработка исключений
-        /*int a = 4;
-        try {
-            System.out.println(a/0);
-        } catch (Exception e) {
-            System.out.println("На ноль делить нельзя!");
-        }*/
     }
 }
