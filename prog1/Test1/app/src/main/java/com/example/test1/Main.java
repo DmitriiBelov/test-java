@@ -8,10 +8,10 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Cat cat = new Cat();
-        Pickup pickup = new Pickup();
-        cat.getSound();
-        pickup.transportCargo();
-        pickup.transportPassengers();
+        SomeClass someClass = new SomeClass();
+        MyClass myClass = new MyClass();
+
+        someClass.registerCallBack(myClass);
+        someClass.doSomething();
     }
 }
