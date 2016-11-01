@@ -6,26 +6,32 @@
 
 using namespace std;
 
-template <typename T1, typename T2>
-T2 printArr(const T1 * array, int i) {
-	int count = 0;
-	for (int j=0; j<i; j++) {
-		cout << array[j] << " ";
-		count++;
+const int arr_length =3;
+
+template <class Type>
+
+class Arr {
+private:
+	Type arr[arr_length];
+public:
+	Arr(Type *a) {
+		for(int i=0; i<arr_length; i++)
+			arr[i]=a[i];
 	}
-	cout << endl;
-	return count;
-}
+	Type getElement(int i) {
+		return arr[i];
+	}
+};
 
 int main(int argc, char* argv[])
 {
-	const int iSize = 3, cSize = 5;
+	int arr1[]={12,23,45,6};
+	Arr<int> obj(arr1);
+	cout << obj.getElement(2) << endl;
 
-	int i_arr[iSize] = {10, 33, 55};
-	char c_arr[cSize] = {"Hii!"};
-
-	cout << "count: " << printArr<int, int>(i_arr, iSize) << endl;
-	cout << "count: " << printArr<char, int>(c_arr, cSize) << endl;
+	char arr2[]={"Mars!"};
+	Arr<char> obj2(arr2);
+	cout << obj2.getElement(0) << endl;
 
 	return 0;
 }
