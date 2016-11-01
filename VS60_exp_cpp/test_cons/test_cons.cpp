@@ -20,13 +20,18 @@ private:
 
 class Person {
 public:
-	void Damage (Dog d) {
+	void Damage (Dog &d) {
 		d.health -= 20;
 		cout << "Health is: " << d.health << endl;
 	}
 
-	void Kill (Dog d) {
+	void Kill (Dog &d) {
 		d.health = 0;
+		cout << "Health is: " << d.health << endl;
+	}
+
+	void Heal (Dog &d) {
+		d.health += 30;
 		cout << "Health is: " << d.health << endl;
 	}
 };
@@ -37,6 +42,13 @@ int main(int argc, char* argv[])
 	Person Volodya;
 	Volodya.Damage(skuby);
 	Volodya.Kill(skuby);
+	Volodya.Damage(skuby);
+	Volodya.Heal(skuby);
+
+	cout << endl;
+	Dog haski;
+	Volodya.Damage(haski);
+
 	return 0;
 }
 
