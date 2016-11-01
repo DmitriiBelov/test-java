@@ -6,48 +6,14 @@
 
 using namespace std;
 
-class Person;
-
-class Dog {
-	friend class Person;
-public:
-	Dog() {
-		health = 100;
-	};
-private:
-	int health;
-};
-
-class Person {
-public:
-	void Damage (Dog &d) {
-		d.health -= 20;
-		cout << "Health is: " << d.health << endl;
-	}
-
-	void Kill (Dog &d) {
-		d.health = 0;
-		cout << "Health is: " << d.health << endl;
-	}
-
-	void Heal (Dog &d) {
-		d.health += 30;
-		cout << "Health is: " << d.health << endl;
-	}
-};
 
 int main(int argc, char* argv[])
 {
-	Dog skuby;
-	Person Volodya;
-	Volodya.Damage(skuby);
-	Volodya.Kill(skuby);
-	Volodya.Damage(skuby);
-	Volodya.Heal(skuby);
+	int value = 8;
+	int &ref = value;
 
-	cout << endl;
-	Dog haski;
-	Volodya.Damage(haski);
+	cin >> ref;
+	cout << value << " - " << ref << endl;
 
 	return 0;
 }

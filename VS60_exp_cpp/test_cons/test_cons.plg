@@ -6,28 +6,21 @@
 --------------------Configuration: test_cons - Win32 Debug--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating temporary file "C:\Users\1F43~1\AppData\Local\Temp\RSPD29C.tmp" with contents
+Creating temporary file "C:\Users\1F43~1\AppData\Local\Temp\RSPEBCC.tmp" with contents
 [
 /nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/test_cons.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
 "D:\git\java_test\VS60_exp_cpp\test_cons\test_cons.cpp"
 ]
-Creating command line "cl.exe @C:\Users\1F43~1\AppData\Local\Temp\RSPD29C.tmp" 
-Creating temporary file "C:\Users\1F43~1\AppData\Local\Temp\RSPD29D.tmp" with contents
-[
-kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/test_cons.pdb" /debug /machine:I386 /out:"Debug/test_cons.exe" /pdbtype:sept 
-.\Debug\StdAfx.obj
-.\Debug\test_cons.obj
-]
-Creating command line "link.exe @C:\Users\1F43~1\AppData\Local\Temp\RSPD29D.tmp"
+Creating command line "cl.exe @C:\Users\1F43~1\AppData\Local\Temp\RSPEBCC.tmp" 
 <h3>Output Window</h3>
 Compiling...
+Skipping... (no relevant changes detected)
 test_cons.cpp
-Linking...
 
 
 
 <h3>Results</h3>
-test_cons.exe - 0 error(s), 0 warning(s)
+test_cons.obj - 0 error(s), 0 warning(s)
 </pre>
 </body>
 </html>
