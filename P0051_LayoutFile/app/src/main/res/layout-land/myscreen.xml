@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:text="Горизонтальная ориентация экрана"
+        android:layout_width="269dp"
+        android:layout_height="41dp"
+        android:id="@+id/textView" />
+
+    <Button
+        android:text="Button"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button" />
+
+    <Button
+        android:text="Button"
+        android:layout_width="142dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2" />
+
+    <Button
+        android:text="Button"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3" />
+</LinearLayout>
